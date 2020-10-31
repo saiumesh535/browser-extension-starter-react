@@ -6,12 +6,14 @@
   "scripts": {
     "clean": "rimraf dist",
     "build-dev": "npm run clean && webpack --config ./config/webpack/webpack.dev.js",
-    "build": "npm run clean && NODE_ENV=prod webpack --config ./config/webpack/webpack.prod.js"
+    "build": "npm run clean && NODE_ENV=prod webpack --config ./config/webpack/webpack.prod.js",
+    "test": "jest --config jest.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/react": "^11.1.0",
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
     "react": "^17.0.1",
@@ -23,9 +25,12 @@
     "@babel/preset-react": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
     "@types/chrome": "0.0.126",
+    "@types/jest": "^26.0.15",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
+    "jest": "^26.6.1",
+    "jest-config": "^26.6.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.4",
     "style-loader": "^2.0.0",
