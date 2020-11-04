@@ -7,7 +7,9 @@
     "clean": "rimraf dist",
     "build-dev": "npm run clean && webpack --config ./config/webpack/webpack.dev.js",
     "build": "npm run clean && NODE_ENV=prod webpack --config ./config/webpack/webpack.prod.js",
-    "test": "jest --config jest.config.js"
+    "test": "jest --config jest.config.js",
+    "lint": "eslint src/**/*.{js,ts,tsx}",
+    "lint:fix": "eslint src/**/*.{js,ts,tsx} --fix"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,12 @@
     "@testing-library/react": "^11.1.0",
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -29,6 +37,7 @@
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
+    "eslint-plugin-react": "^7.21.5",
     "jest": "^26.6.1",
     "jest-config": "^26.6.1",
     "node-sass": "^4.14.1",

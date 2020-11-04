@@ -5,6 +5,6 @@ module.exports = {
     moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
     // ...
     moduleNameMapper: {
-        "^.+\\.(css|less|scss)$": "babel-jest"
-    }
+        '^.+\\.(css|less|scss)$': 'babel-jest',
+    },
 };
