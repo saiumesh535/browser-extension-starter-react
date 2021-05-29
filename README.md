@@ -13,3 +13,10 @@ Let's discuss couple of concepts from Browser extension.
 `background` [Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts "Reference")
 
 `content_scripts` [Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts "Reference")
+
+
+### Summary
+
+> * A **content script** is injected into each page matching some criteria.
+> * **Background script** can be used for all http calls and as well as persisting storage
+> * **Default popup** is out html page shows by clicking on extension icon
