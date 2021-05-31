@@ -13,6 +13,7 @@ function listenToMessages(): void {
 
 function listenAndRespond() {
     chrome.runtime.onMessage.addListener((message: MessageWithResponse, _sender, sendResponse) => {
+        console.log('Got message from CS');
         setTimeout(() => {
             sendResponse(`Hello, ${message.name}`);
         }, 1000);
