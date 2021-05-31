@@ -21,4 +21,9 @@ Let's discuss couple of concepts from Browser extension.
 > * **Background script** can be used for all http calls and as well as persisting storage
 > * **Default popup** is out html page shows by clicking on extension icon
 
-### Source: https://developer.chrome.com/docs/extensions/mv3/getstarted/
+### Source: 
+
+**V2 version** https://developer.chrome.com/docs/extensions/mv2/getstarted/
+
+**V3 version** https://developer.chrome.com/docs/extensions/mv3/getstarted/
+
