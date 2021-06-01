@@ -2,6 +2,24 @@
 
 Building and configuring browser extension with it's required config is relatively combursome task. So, I decided to make a template which helps to create browser extension using React.
 
+## Installation
+```cmd
+npm install 
+```
+
+## Dev build 
+This creates development build in **dist/dev** folder 
+```cmd
+npm run build-dev
+```
+
+## Load extension 
+Open Chrome browser 
+> * go to chrome://extensions
+> * Enable Developer mode
+> * Drag and Drop extension from **dist/dev** folder
+
+
 Let's discuss couple of concepts from Browser extension.
 
 ## manifest:
